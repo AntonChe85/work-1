@@ -1,4 +1,4 @@
-My portfolio
+Instruction {my portfolio}
 
 1. git clone https://github.com/AntonChe85/work-1.git site
 2. cd site
