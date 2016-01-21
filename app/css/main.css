@@ -1,6 +1,6 @@
 body,
 html {
-    background: url(/img/bg_top.png) #fbfcfd;
+    background: url(/img/bg-top.png) #fbfcfd;
     width: 100%;
     height: 100%;
     padding: 0;
@@ -252,12 +252,12 @@ ul {
     padding: 0;
 }
 
-.my_skills {
+.my-skills {
     float: left;
 }
 
 .skills {
-    width: 235px;
+    width: 250px;
     float: right;
     padding: 10px 0;
 }
@@ -295,65 +295,57 @@ ul {
     width: 230px;
     height: 2px;
     background-color: #3ba8c0;
-    /* margin-top: 22px; */
 } 
 
 .section {
+    width: 650px;
     margin-top: 3px;
-	background-color: #eff3f7;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
-	border-radius: 5px;
-    padding-bottom: 45px;
+    background-color: #eff3f7;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding-bottom: 45px; 
+} 
+
+.section-content-1 {
+    margin-bottom: 25px;
 }
 
-.section p {
-	color: #687078;
-	font-size: 17px;
-    margin-top: -3px;
-	padding: 28px 0 0 123px;
-	letter-spacing: -1px;
+.list-items {
+    margin: 28px 0 0 60px;
+}
+
+.list-items p {
+    margin: 0;
+    color: #687078;
+}
+
+.list-items li { 
+    margin-bottom: 20px;
+    padding-left: 66px;
+}
+
+.work li {
+    background: url(/img/icon-work.png) no-repeat left center; 
 }
 
 .section-content-2 {
-    margin-top: 25px;
-	width: 650px;
-	position: relative;
+    margin-bottom: 25px;
 }
 
-.section-content-2 p:before {
-	content: "";
-	position: absolute;
-	left: 55px;
-	width: 36px;
-	height: 34px;
-	background-image: url(/img/icon_work.png);
+.learn .list-item-1,
+.learn .list-item-2 {
+    background: url(/img/icon-learn.png) no-repeat left center; 
+}
+
+.learn .list-item-3 {
+    background: url(/img/icon-kurs.png) no-repeat 10px center; 
 }
 
 .section-content-3 {
-    margin-top: 25px;
-	width: 650px;
-	position: relative;
-}
 
-p.learn:before {
-	content: "";
-	position: absolute;
-	left: 60px;
-	width: 41px;
-	height: 23px;
-	background-image: url(/img/icon_learn.png);
-}
-
-p.kurs:before {
-	content: "";
-	position: absolute;
-	left: 70px;
-	width: 26px;
-	height: 32px;
-	background-image: url(/img/icon_kurs.png);
 }
 
 .empty {
@@ -361,6 +353,7 @@ p.kurs:before {
 }
 
 .footer {
+    color: #687078;    
     height: 78px;
     background-color: #eff3f7;
     margin-top: -78px;
