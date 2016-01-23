@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body,
 html {
     background: url(/img/bg-top.png) #fbfcfd;
@@ -6,7 +10,7 @@ html {
     padding: 0;
     margin: 0;
 }
-
+ 
 a {
     text-decoration: none;   
 }
@@ -27,18 +31,18 @@ ul {
   clear: both;
 }
 
-.socials {
+.hidden-text {
     text-indent: -9999px;
 }
-
+ 
 .wrapper {
     min-height: 100%;
     overflow: hidden;
     position: relative;
-}
+} 
 
 /* ******************* HEADER ****************** */
-
+ 
 .header {
     background-color: #eff3f7;  
 }
@@ -83,8 +87,7 @@ ul {
 
 .social-item-1.active {
 	background-image: url(/img/socials-sprite.png);
-    background-position: 0 47px;
-    
+    background-position: 0 47px; 
 }
 
 .social-item-1 {
@@ -123,9 +126,9 @@ ul {
     margin: 40px auto;
     width: 960px;
 }
-
+ 
 /* ******************* SIDEBAR ****************** */
-
+ 
 .sidebar {
     float: left;
 }
@@ -225,9 +228,9 @@ ul {
 .contact-list-item-3 {
     background: url(/img/icon-skype.png) no-repeat 20px center #51daf8;
 }
-
+ 
 /* ******************* CONTENT ****************** */
-
+ 
 .content-area {
     width: 650px;
     float: right;
@@ -243,77 +246,12 @@ ul {
     border-radius: 5px;
 } 
 
-.section-content-1 {
-    margin-bottom: 25px;
-    padding-bottom: 40px;
-}
-
-.foto {
-    width: 140px;
-    height: 140px;
-    margin: 30px 0 0 50px;
-    border: 3px solid #2da4bc;
-    -webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-    display: inline-block;
-    vertical-align: top;
-    overflow: hidden;
-}
-
-.anketa {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.anketa span {
-    font-weight: bold;
-    color: #4a545d;
-    font-family: "firasans-medium", sans-serif;
-}
-
-.anketa p {
-    color: #4a545d;
-    font-family: "firasans-book", sans-serif;
-}
-
-.section-content-1 .anketa p {
-    margin: 20px;
-}
-
-.skills {
-    width: 250px;
-    margin: -40px 0 0 190px;
-    font-family: "ProximaNovaBold", sans-serif;
-}
-
-.skills ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.btn {
-    float: left;
-    border: none;
-    color: #fff;
-    padding: 3px 10px;
-    margin: 5px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    background-color: #3ba8c0;
-    background-image: linear-gradient(to bottom, #3ba8c0 50%, #2e8ca2 50%);
-}
-
 .title-info {
     color: #5eb3c8;
 	padding: 20px 0 22px 22px;
     margin-bottom: -4px;
-	font-size: 27px;
-	font-weight: normal;
+	font-size: 27px; 
+	font-weight: normal; 
 	letter-spacing: -1px;
     font-family: "firasans-book", sans-serif;
 }
@@ -323,52 +261,6 @@ ul {
     height: 2px;
     background-color: #3ba8c0;
 } 
-
-.line-info {
-    width: 340px;
-}
-
-.list-items {
-    margin: 28px 0 0 60px;
-}
-
-.list-items span {
-    color: #687078;
-    font-family: "firasans-book", sans-serif;
-}
-
-.list-items p {
-    margin: 0;
-    color: #687078;
-    font-family: "firasans-light", sans-serif;
-}
-
-.list-items li { 
-    margin-bottom: 20px;
-    padding-left: 66px;
-}
-
-.work li {
-    background: url(/img/icon-work.png) no-repeat left center; 
-}
-
-.section-content-2 {
-    margin-bottom: 25px;
-    padding-bottom: 25px;
-}
-
-.learn .list-item-1,
-.learn .list-item-2 {
-    background: url(/img/icon-learn.png) no-repeat left center; 
-}
-
-.learn .list-item-3 {
-    background: url(/img/icon-kurs.png) no-repeat 10px center; 
-}
-
-.section-content-3 {
-    padding-bottom: 25px;
-}
 
 .empty {
     height: 78px;
@@ -417,8 +309,6 @@ ul {
 	background-image: -ms-linear-gradient(left, rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
 	background-image: linear-gradient(to right, rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
 }
-
-
 
 
 
