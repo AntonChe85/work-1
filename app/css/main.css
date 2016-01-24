@@ -1,3 +1,9 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body,
 html {
     background: url(/img/bg-top.png) #fbfcfd;
@@ -81,10 +87,15 @@ ul {
     background-image: url(/img/socials-sprite.png);
 }
 
-.social-item-1.active {
-	background-image: url(/img/socials-sprite.png);
-    background-position: 0 47px;
-    
+.socials li a {
+    display: block;
+    width: 47px;
+	height: 47px;
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;  
 }
 
 .social-item-1 {
@@ -100,7 +111,7 @@ ul {
 } 
 
 .social-item-2:hover {
-	background: url(/img/socials-sprite.png) -57px 47px;;
+	background: url(/img/socials-sprite.png) -57px 47px;
 }
 
 .social-item-3 {
@@ -117,6 +128,22 @@ ul {
 
 .social-item-4:hover {
 	background: url(/img/socials-sprite.png) -171px 47px;
+}
+
+.rotate-social {
+    -o-transition: transform 0.5s;
+	-ms-transition: transform 0.5s;
+	-moz-transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.rotate-social:hover {
+    -o-transform: rotate(3turn);
+	-ms-transform: rotate(3turn);
+	-moz-transform: rotate(3turn);
+	-webkit-transform: rotate(3turn);
+	transform: rotate(3turn);
 }
 
 .container {
@@ -140,23 +167,22 @@ ul {
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
 	border-radius: 5px;
-    font-family: "firasans-book", sans-serif;
+    font-family: 'fira_sansbook', sans-serif;
 }
 
 .menu a {
     width: 210px;
     display: block;
 	color: #959aa8;
-    padding-left: 20px;
+    padding: 20px;
     border-bottom: 2px solid #3ba8c0;
 }
 
 .menu li {
     width: 250px;
-    margin-right: 10px;
-	height: 72px;
+/*    padding: 20px 0 0 20px;*/
     padding-left: 10px;
-	line-height: 72px;
+    margin-bottom: -2px;
 }
 
 .menu li:hover a {
@@ -244,8 +270,27 @@ ul {
 } 
 
 .section-content-1 {
-    margin-bottom: 25px;
-    padding-bottom: 40px;
+    margin-bottom: 25px; 
+    padding-bottom: 40px; 
+}
+
+.header-section {
+    padding: 20px 0 20px 20px;
+    -webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-ms-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+.title-info {
+    color: #5eb3c8;
+	margin: 0;
+	padding: 0;
+	font-size: 27px;
+	font-weight: normal;
+	letter-spacing: -1px;
+    font-family: "firasans-book", sans-serif;
 }
 
 .foto {
@@ -264,11 +309,15 @@ ul {
 }
 
 .anketa {
+    background-color: red;
+    width: 420px;
     display: inline-block;
     vertical-align: top;
 }
 
 .anketa span {
+    display: block;
+    float: left;
     font-weight: bold;
     color: #4a545d;
     font-family: "firasans-medium", sans-serif;
@@ -277,6 +326,10 @@ ul {
 .anketa p {
     color: #4a545d;
     font-family: "firasans-book", sans-serif;
+}
+
+.about-name {
+    
 }
 
 .section-content-1 .anketa p {
@@ -306,16 +359,6 @@ ul {
     border-radius: 3px;
     background-color: #3ba8c0;
     background-image: linear-gradient(to bottom, #3ba8c0 50%, #2e8ca2 50%);
-}
-
-.title-info {
-    color: #5eb3c8;
-	padding: 20px 0 22px 22px;
-    margin-bottom: -4px;
-	font-size: 27px;
-	font-weight: normal;
-	letter-spacing: -1px;
-    font-family: "firasans-book", sans-serif;
 }
 
 .line {
@@ -387,8 +430,8 @@ ul {
 .container-footer {
     width: 960px;
     margin: 0 auto;
+    padding-top: 25px;
     height: 78px;
-    line-height: 78px;
     text-align: center;  
     font-family: "firasans-light", sans-serif;
 }
@@ -397,13 +440,17 @@ ul {
     float: left;
     display: block;
     width: 20px;
-    height: 78px;
-    background: url(/img/lock-sprite.png) 0 23px no-repeat;
+height: 40px;
+    background: url(/img/lock-sprite.png) 0 0 no-repeat;
+}
+
+.footer-text {
+    margin: 0 200px;
 }
 
 .container-footer span:hover {
     cursor: pointer;
-    background: url(/img/lock-sprite.png) -30px 23px no-repeat;
+    background: url(/img/lock-sprite.png) -30px 0 no-repeat;
 }
 
 .footer:before {

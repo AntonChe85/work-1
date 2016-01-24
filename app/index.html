@@ -23,11 +23,11 @@
                     <img class="logo-img" src="/img/logo.png" alt="#" title="Логотип">
                 </a>
                 <nav>
-                    <ul class="socials">
-                        <li class="social-item-1 active"><a href="#">vkontakte</a></li>
-                        <li class="social-item-2"><a href="#">twitter</a></li>
-                        <li class="social-item-3"><a href="#">facebook</a></li>
-                        <li class="social-item-4"><a href="#">github</a></li>
+                    <ul class="socials hidden-text clearfix">
+                        <li class="social-item-1 rotate-social"><a href="https://vk.com/">vkontakte</a></li>
+                        <li class="social-item-2 rotate-social"><a href="https://twitter.com/">twitter</a></li>
+                        <li class="social-item-3 rotate-social"><a href="https://www.facebook.com/">facebook</a></li>
+                        <li class="social-item-4 rotate-social"><a href="https://github.com/">github</a></li>
                     </ul>
                 </nav>
             </div>           
@@ -40,6 +40,9 @@
                         <ul>
                             <li class="menu-item-1 active"><a href="#">Обо мне</a></li>
                             <li class="menu-item-2"><a href="work.html">Мои работы</a></li>
+                            <li class="menu-item-3"><a href="contact.html">Связаться со мной</a></li>
+                            <li class="menu-item-1 active"><a href="#">Обо мне</a></li>
+                            <li class="menu-item-2"><a href="work.html">Мои работы Мои работы Мои работы</a></li>
                             <li class="menu-item-3"><a href="contact.html">Связаться со мной</a></li>
 					    </ul>
                     </nav>
@@ -59,15 +62,20 @@
 <!-- ---------------------- CONTENT -------------------- -->
                 <div class="content-area">
                     <div class="section section-content-1">
-                        <h1 class="title-info">Основная информация</h1>
+                        <div class="header-section">
+                            <h1 class="title-info">Основная информация</h1>
+                        </div>    
                         <div class="line line-info"></div>
                         <div class="foto">
                             <img src="/img/foto.png" alt="#" class="foto-img">
                         </div>
+                        ul.anketa>li*5>a    
+<!--
                         <div class="anketa clearfix">
-                            <p><span>Меня зовут:</span> Антон Черкасов</p>
+                            <span>Меня зовут:</span> 
+                            <p class="about-name">Антон Черкасов Антон Черкасов Антон Черкасов</p>
                             <p><span>Мой возраст:</span> 30 лет</p>
-                            <p><span>Мой город:</span> Полтава</p>
+                            <p><span>Мой город:</span> Полтава, Украина</p>
                             <p><span>Мой специализация:</span> FRONTEND разработчик</p>
                             <p class="my-skills"><span>Ключевые навыки:</span>
                                 <ul class="skills">
@@ -76,9 +84,15 @@
                                     <li class="btn">javascript</li>
                                     <li class="btn">gulp</li>
                                     <li class="btn">git</li>
+                                    <li class="btn">html</li>
+                                    <li class="btn">css</li>
+                                    <li class="btn">javascript</li>
+                                    <li class="btn">gulp</li>
+                                    <li class="btn">git</li>
                                 </ul>
                             </p>
                         </div>                       
+-->
                     </div>
                     <div class="section section-content-2">
                         <div class="header-section">
@@ -125,9 +139,10 @@
     </div>
 <!-- ---------------------- FOOTER --------------------- -->    
     <footer class="footer">
-        <div class="container-footer"> 
-            <span></span>     
-            <p>&copy; 2016. Это мой сайт, пожалуйста, не копируйте и воруйте его</p>
+        <div class="container-footer">    
+            <span><a href="authorization.html">Войти</a></span> 
+            
+            <div class="footer-text">&copy; 2016. Это мой сайт, пожалуйста, не копируйте и воруйте его</div>
         </div>
     </footer>
     <script src="jquery/jquery.js"></script> 

@@ -10,7 +10,7 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
-    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="fonts/fonts.css">
     <script src="bower/html5shiv/dist/html5shiv.js"></script>
 </head>
@@ -24,10 +24,10 @@
                 </a>
                 <nav>
                     <ul class="socials hidden-text">
-                        <li class="social-item-1 active"><a href="#">vkontakte</a></li>
-                        <li class="social-item-2"><a href="#">twitter</a></li>
-                        <li class="social-item-3"><a href="#">facebook</a></li>
-                        <li class="social-item-4"><a href="#">github</a></li>
+                        <li class="social-item-1 active"><a href="https://vk.com/">vkontakte</a></li>
+                        <li class="social-item-2"><a href="https://twitter.com/">twitter</a></li>
+                        <li class="social-item-3"><a href="https://www.facebook.com/">facebook</a></li>
+                        <li class="social-item-4"><a href="https://github.com/">github</a></li>
                     </ul>
                 </nav>
             </div>           
@@ -59,8 +59,30 @@
 <!-- ---------------------- CONTENT -------------------- -->            
                 <div class="content-area">
                     <div class="section">
-                        <h1 class="title-info">Мои работы</h1>
-                        <div class="line"></div>                
+                        <div class="header-section">
+                            <h1 class="title">У вас интересный проект ? Напишите мне</h1> 
+                        </div> 
+                        <div class="form-block clearfix">
+                            <form action="#" method="POST">
+                                <label class="name" for="name">Имя
+                                <input type="text" placeholder="Как к Вам обращаться">
+                                </label>
+                                
+                                <label class="email" for="email">Email
+                                <input type="text" placeholder="Куда мне писать">
+                                </label>
+                                <label>Сообщение
+                                <textarea name="massage" placeholder="Кратко в чем суть"></textarea>
+                                </label>
+                                <label for="captcha">Введите код, указанный на картинке
+                                <input class="captcha" type="text" name="captcha">
+                                <input class="captcha-text" type="text" placeholder="Введите код" name="required"></label>
+                                <div class="btn-form">
+                                    <button type="submit" class="button btn-1">Отправить</button>
+                                    <button type="submit" class="button btn-2">Очистить </button>
+                                </div>    
+                            </form>
+                        </div>             
                     </div>
 				</div>
             </div>

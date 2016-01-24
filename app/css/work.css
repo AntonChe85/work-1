@@ -1,4 +1,6 @@
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -83,6 +85,17 @@ ul {
 	float: left;
 	margin-left: 25px;
     background-image: url(/img/socials-sprite.png);
+}
+
+.socials li a {
+    display: block;
+    width: 47px;
+	height: 47px;
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;  
 }
 
 .social-item-1.active {
@@ -246,10 +259,19 @@ ul {
     border-radius: 5px;
 } 
 
+.header-section {
+    padding: 20px 0 20px 20px;
+    -webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-ms-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
 .title-info {
     color: #5eb3c8;
-	padding: 20px 0 22px 22px;
-    margin-bottom: -4px;
+	margin: 0;
+	padding: 0;
 	font-size: 27px; 
 	font-weight: normal; 
 	letter-spacing: -1px;
@@ -277,6 +299,7 @@ ul {
 }
 
 .project {
+    position: relative;
     overflow: hidden;
     width: 183px;
     height: 129px;
@@ -293,17 +316,17 @@ ul {
 }
 
 .project .opacity {
-    position: relative; 
+    position: absolute; 
+    top: 0;
     color: #fff;
     background: rgba(38, 112, 153, .75);
     display: none;
     padding: 55px 55px 45px 55px;
     border-radius: 5px;
-    margin-top: -132px; 
 }
 
 .button {
-    position: relative;
+/*    position: relative;*/
     text-decoration: none;
     color: #fff;
     padding: 5px;
@@ -312,11 +335,17 @@ ul {
     display: block;
     font-family: "firasans-book", sans-serif;
     font-size: 12px;
+    
 }
 
-.button:hover {
+.opacity:hover {
     color: #fff;
     display: block;
+    transform: scale(2);
+    -webkit-transition: all ease-out 0.5s;
+     -moz-transition: all ease-out 0.5s;
+     -o-transition: all ease-out 0.5s;
+     transition: all ease-out 0.5s;
 }
 
 .project:hover .opacity {
