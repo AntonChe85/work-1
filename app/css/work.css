@@ -6,7 +6,7 @@
 
 body,
 html {
-    background: url(/img/bg-top.png) #fbfcfd;
+    background: url(../img/bg-top.png) #fbfcfd;
     width: 100%;
     height: 100%;
     padding: 0;
@@ -68,7 +68,7 @@ ul {
 
 .logo-img {
 	cursor: pointer;
-	padding: 40px 0 35px 0;
+	padding: 15px 0 35px 0;
 	float: left;
 }
 
@@ -84,7 +84,7 @@ ul {
 	cursor: pointer;
 	float: left;
 	margin-left: 25px;
-    background-image: url(/img/socials-sprite.png);
+    background-image: url(../img/socials-sprite.png);
 }
 
 .socials li a {
@@ -99,40 +99,56 @@ ul {
 }
 
 .social-item-1.active {
-	background-image: url(/img/socials-sprite.png);
+	background-image: url(../img/socials-sprite.png);
     background-position: 0 47px; 
 }
 
 .social-item-1 {
-	background: url(/img/socials-sprite.png) 0 0;
+	background: url(../img/socials-sprite.png) 0 0;
 } 
 
-.social-item-1:hover {
-	background: url(/img/socials-sprite.png) 0 47px;
+.social-item-1:active {
+	background: url(../img/socials-sprite.png) 0 47px;
 } 
 
 .social-item-2 {
-	background: url(/img/socials-sprite.png) -57px 0;
+	background: url(../img/socials-sprite.png) -57px 0;
 } 
 
-.social-item-2:hover {
-	background: url(/img/socials-sprite.png) -57px 47px;;
+.social-item-2:active {
+	background: url(../img/socials-sprite.png) -57px 47px;
 }
 
 .social-item-3 {
-	background: url(/img/socials-sprite.png) -114px 0;
+	background: url(../img/socials-sprite.png) -114px 0;
 } 
 
-.social-item-3:hover {
-	background: url(/img/socials-sprite.png) -114px 47px;
+.social-item-3:active {
+	background: url(../img/socials-sprite.png) -114px 47px;
 }
 
 .social-item-4 {
-	background: url(/img/socials-sprite.png) -171px 0;
+	background: url(../img/socials-sprite.png) -171px 0;
 } 
 
-.social-item-4:hover {
-	background: url(/img/socials-sprite.png) -171px 47px;
+.social-item-4:active {
+	background: url(../img/socials-sprite.png) -171px 47px;
+}
+
+.rotate-social {
+    -o-transition: transform 0.25s;
+	-ms-transition: transform 0.25s;
+	-moz-transition: transform 0.25s;
+	-webkit-transition: transform 0.25s;
+	transition: transform 0.25s;
+}
+
+.rotate-social:hover {
+    -o-transform: rotate(1turn);
+	-ms-transform: rotate(1turn);
+	-moz-transform: rotate(1turn);
+	-webkit-transform: rotate(1turn);
+	transform: rotate(1turn);
 }
 
 .container {
@@ -156,23 +172,22 @@ ul {
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
 	border-radius: 5px;
-    font-family: "firasans-book", sans-serif;
+    font-family: 'fira_sansbook', sans-serif;
+    font-size: 21px;
 }
 
 .menu a {
-    width: 210px;
+    width: 230px;
     display: block;
 	color: #959aa8;
-    padding-left: 20px;
+    padding: 20px;
     border-bottom: 2px solid #3ba8c0;
 }
 
 .menu li {
     width: 250px;
-    margin-right: 10px;
-	height: 72px;
     padding-left: 10px;
-	line-height: 72px;
+    margin-bottom: -2px;
 }
 
 .menu li:hover a {
@@ -192,19 +207,20 @@ ul {
 .contacts {
     overflow: hidden;
     margin-top: 30px;
-    font-size: 14px;
     -webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
 	border-radius: 5px;
     color: #fbfcfd; 
-    font-family: "firasans-book", sans-serif;
+    font-family: 'fira_sansbook', sans-serif;
+    font-size: 16px;
 }
 
 .contacts-title {
     background-color: #3ba8c0;
     line-height: 40px;
+    letter-spacing: 1px;
     padding-left: 20px;
     -webkit-border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
@@ -214,8 +230,8 @@ ul {
 }
 
 .contact-list {
-    margin-top: -17px;
-}
+    margin-top: -18px;
+} 
 
 .contact-list a {
     color: #fbfcfd;
@@ -231,15 +247,15 @@ ul {
 }
 
 .contact-list-item-1 {
-    background: url(/img/icon-email.png) no-repeat 20px center #41b9d4;
+    background: url(../img/icon-email.png) no-repeat 20px center #41b9d4;
 }
 
 .contact-list-item-2 {
-    background: url(/img/icon-phone.png) no-repeat 20px center #48cbe8;
+    background: url(../img/icon-phone.png) no-repeat 20px center #48cbe8;
 }
 
 .contact-list-item-3 {
-    background: url(/img/icon-skype.png) no-repeat 20px center #51daf8;
+    background: url(../img/icon-skype.png) no-repeat 20px center #51daf8;
 }
  
 /* ******************* CONTENT ****************** */
@@ -286,7 +302,7 @@ ul {
 
 .projects-site {
     margin: 30px 0 0 20px; 
-    padding-bottom: 260px;
+    padding-bottom: 40px;
 }
 
 .my-project {
@@ -310,7 +326,7 @@ ul {
 }
 
 .project-add-new {
-    background: url(/img/_icon-project-add-new.png) no-repeat 50% 50%;
+    background: url(../img/_icon-project-add-new.png) no-repeat 50% 50%;
     border: 2px dashed #3ba8c0;
     cursor: pointer;
 }
@@ -319,6 +335,7 @@ ul {
     position: absolute; 
     top: 0;
     color: #fff;
+    background: url(../img/opacity-ie8.png);
     background: rgba(38, 112, 153, .75);
     display: none;
     padding: 55px 55px 45px 55px;
@@ -326,14 +343,13 @@ ul {
 }
 
 .button {
-/*    position: relative;*/
     text-decoration: none;
     color: #fff;
     padding: 5px;
     border-radius: 5px;
     border: 2px solid #fff; 
     display: block;
-    font-family: "firasans-book", sans-serif;
+    font-family: "fira-sansbook", sans-serif;
     font-size: 12px;
     
 }
@@ -362,8 +378,9 @@ ul {
 
 .description-site {
     color: #a4aaaf;
-    display: block;
     margin-top: 10px;
+    font-family: "fira-sanslight", sans-serif;
+    font-size: 15px;
 }
 
 .empty {
@@ -386,7 +403,8 @@ ul {
     height: 78px;
     line-height: 78px;
     text-align: center;  
-    font-family: "firasans-light", sans-serif;
+    font-family: 'fira_sanslight', sans-serif;
+    font-size: 15px;
 }
 
 .container-footer span {
@@ -394,12 +412,12 @@ ul {
     display: block;
     width: 20px;
     height: 78px;
-    background: url(/img/lock-sprite.png) 0 23px no-repeat;
+    background: url(../img/lock-sprite.png) 0 23px no-repeat;
 }
 
 .container-footer span:hover {
     cursor: pointer;
-    background: url(/img/lock-sprite.png) -30px 23px no-repeat;
+    background: url(../img/lock-sprite.png) -30px 23px no-repeat;
 }
 
 .footer:before {

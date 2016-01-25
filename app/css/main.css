@@ -6,7 +6,7 @@
 
 body,
 html {
-    background: url(/img/bg-top.png) #fbfcfd;
+    background: url(../img/bg-top.png) #fbfcfd;
     width: 100%;
     height: 100%;
     padding: 0;
@@ -68,7 +68,7 @@ ul {
 
 .logo-img {
 	cursor: pointer;
-	padding: 40px 0 35px 0;
+	padding: 15px 0 35px 0;
 	float: left;
 }
 
@@ -84,7 +84,7 @@ ul {
 	cursor: pointer;
 	float: left;
 	margin-left: 25px;
-    background-image: url(/img/socials-sprite.png);
+    background-image: url(../img/socials-sprite.png);
 }
 
 .socials li a {
@@ -99,51 +99,51 @@ ul {
 }
 
 .social-item-1 {
-	background: url(/img/socials-sprite.png) 0 0;
+	background: url(../img/socials-sprite.png) 0 0;
 } 
 
-.social-item-1:hover {
-	background: url(/img/socials-sprite.png) 0 47px;
+.social-item-1:active {
+	background: url(../img/socials-sprite.png) 0 47px;
 } 
 
 .social-item-2 {
-	background: url(/img/socials-sprite.png) -57px 0;
+	background: url(../img/socials-sprite.png) -57px 0;
 } 
 
-.social-item-2:hover {
-	background: url(/img/socials-sprite.png) -57px 47px;
+.social-item-2:active {
+	background: url(../img/socials-sprite.png) -57px 47px;
 }
 
 .social-item-3 {
-	background: url(/img/socials-sprite.png) -114px 0;
+	background: url(../img/socials-sprite.png) -114px 0;
 } 
 
-.social-item-3:hover {
-	background: url(/img/socials-sprite.png) -114px 47px;
+.social-item-3:active {
+	background: url(../img/socials-sprite.png) -114px 47px;
 }
 
 .social-item-4 {
-	background: url(/img/socials-sprite.png) -171px 0;
+	background: url(../img/socials-sprite.png) -171px 0;
 } 
 
-.social-item-4:hover {
-	background: url(/img/socials-sprite.png) -171px 47px;
+.social-item-4:active {
+	background: url(../img/socials-sprite.png) -171px 47px;
 }
 
 .rotate-social {
-    -o-transition: transform 0.5s;
-	-ms-transition: transform 0.5s;
-	-moz-transition: transform 0.5s;
-	-webkit-transition: transform 0.5s;
-	transition: transform 0.5s;
+    -o-transition: transform 0.25s;
+	-ms-transition: transform 0.25s;
+	-moz-transition: transform 0.25s;
+	-webkit-transition: transform 0.25s;
+	transition: transform 0.25s;
 }
 
 .rotate-social:hover {
-    -o-transform: rotate(3turn);
-	-ms-transform: rotate(3turn);
-	-moz-transform: rotate(3turn);
-	-webkit-transform: rotate(3turn);
-	transform: rotate(3turn);
+    -o-transform: rotate(1turn);
+	-ms-transform: rotate(1turn);
+	-moz-transform: rotate(1turn);
+	-webkit-transform: rotate(1turn);
+	transform: rotate(1turn);
 }
 
 .container {
@@ -168,10 +168,11 @@ ul {
 	-o-border-radius: 5px;
 	border-radius: 5px;
     font-family: 'fira_sansbook', sans-serif;
+    font-size: 21px;
 }
 
 .menu a {
-    width: 210px;
+    width: 230px;
     display: block;
 	color: #959aa8;
     padding: 20px;
@@ -180,7 +181,6 @@ ul {
 
 .menu li {
     width: 250px;
-/*    padding: 20px 0 0 20px;*/
     padding-left: 10px;
     margin-bottom: -2px;
 }
@@ -202,19 +202,20 @@ ul {
 .contacts {
     overflow: hidden;
     margin-top: 30px;
-    font-size: 14px;
     -webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
 	border-radius: 5px;
     color: #fbfcfd; 
-    font-family: "firasans-book", sans-serif;
+    font-family: 'fira_sansbook', sans-serif;
+    font-size: 16px;
 }
 
 .contacts-title {
     background-color: #3ba8c0;
     line-height: 40px;
+    letter-spacing: 1px;
     padding-left: 20px;
     -webkit-border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
@@ -222,10 +223,10 @@ ul {
 	-o-border-radius: 5px 5px 0 0;
 	border-radius: 5px 5px 0 0;
 }
-
+/* ********** проверить этот отступ ************** */
 .contact-list {
-    margin-top: -17px;
-}
+    margin-top: -18px;
+} 
 
 .contact-list a {
     color: #fbfcfd;
@@ -241,15 +242,15 @@ ul {
 }
 
 .contact-list-item-1 {
-    background: url(/img/icon-email.png) no-repeat 20px center #41b9d4;
+    background: url(../img/icon-email.png) no-repeat 20px center #41b9d4;
 }
 
 .contact-list-item-2 {
-    background: url(/img/icon-phone.png) no-repeat 20px center #48cbe8;
+    background: url(../img/icon-phone.png) no-repeat 20px center #48cbe8;
 }
 
 .contact-list-item-3 {
-    background: url(/img/icon-skype.png) no-repeat 20px center #51daf8;
+    background: url(../img/icon-skype.png) no-repeat 20px center #51daf8;
 }
 
 /* ******************* CONTENT ****************** */
@@ -275,7 +276,7 @@ ul {
 }
 
 .header-section {
-    padding: 20px 0 20px 20px;
+    padding: 14px 0 12px 22px;
     -webkit-border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
 	-ms-border-radius: 5px 5px 0 0;
@@ -286,11 +287,9 @@ ul {
 .title-info {
     color: #5eb3c8;
 	margin: 0;
-	padding: 0;
-	font-size: 27px;
-	font-weight: normal;
-	letter-spacing: -1px;
-    font-family: "firasans-book", sans-serif;
+    font-family: 'fira_sansbook', sans-serif;
+    font-size: 27px;
+    font-weight: normal;
 }
 
 .foto {
@@ -309,56 +308,52 @@ ul {
 }
 
 .anketa {
-    background-color: red;
-    width: 420px;
+    width: 380px;
     display: inline-block;
     vertical-align: top;
+    margin: 20px 0 0 25px;
 }
 
-.anketa span {
-    display: block;
+.anketa li {
+    margin-bottom: 5px;
+}
+
+.anketa-item-1 {
     float: left;
-    font-weight: bold;
-    color: #4a545d;
-    font-family: "firasans-medium", sans-serif;
+    margin-right: 15px;
+    font-family: 'fira_sansmedium', sans-serif;
 }
 
-.anketa p {
-    color: #4a545d;
-    font-family: "firasans-book", sans-serif;
+.anketa-item-2 {
+    max-width: 220px;
+    overflow: hidden; 
+    font-family: 'fira_sansbook', sans-serif;
 }
 
-.about-name {
+.anketa-item-2 span {
+    text-transform: uppercase;
     
-}
-
-.section-content-1 .anketa p {
-    margin: 20px;
-}
-
-.skills {
-    width: 250px;
-    margin: -40px 0 0 190px;
-    font-family: "ProximaNovaBold", sans-serif;
 }
 
 .skills ul {
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    list-style-type: none; 
 }
 
 .btn {
     float: left;
     border: none;
     color: #fff;
-    padding: 3px 10px;
+    padding: 2px 10px;
     margin: 5px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
     background-color: #3ba8c0;
     background-image: linear-gradient(to bottom, #3ba8c0 50%, #2e8ca2 50%);
+    font-family: "ProximaNovaRegular", sans-serif;
+    font-size: 14px;
 }
 
 .line {
@@ -377,13 +372,15 @@ ul {
 
 .list-items span {
     color: #687078;
-    font-family: "firasans-book", sans-serif;
+    font-family: 'fira_sansbook', sans-serif;
+    font-size: 18px;
 }
 
 .list-items p {
-    margin: 0;
+    margin: -4px 0;
     color: #687078;
-    font-family: "firasans-light", sans-serif;
+    font-family: 'fira_sanslight', sans-serif;
+    font-size: 16px;
 }
 
 .list-items li { 
@@ -391,8 +388,10 @@ ul {
     padding-left: 66px;
 }
 
+
+
 .work li {
-    background: url(/img/icon-work.png) no-repeat left center; 
+    background: url(../img/icon-work.png) no-repeat left center; 
 }
 
 .section-content-2 {
@@ -402,11 +401,11 @@ ul {
 
 .learn .list-item-1,
 .learn .list-item-2 {
-    background: url(/img/icon-learn.png) no-repeat left center; 
+    background: url(../img/icon-learn.png) no-repeat left center; 
 }
 
 .learn .list-item-3 {
-    background: url(/img/icon-kurs.png) no-repeat 10px center; 
+    background: url(../img/icon-kurs.png) no-repeat 10px center; 
 }
 
 .section-content-3 {
@@ -433,15 +432,16 @@ ul {
     padding-top: 25px;
     height: 78px;
     text-align: center;  
-    font-family: "firasans-light", sans-serif;
+    font-family: 'fira_sanslight', sans-serif;
+    font-size: 15px;
 }
 
-.container-footer span {
+.container-footer a {
     float: left;
     display: block;
     width: 20px;
-height: 40px;
-    background: url(/img/lock-sprite.png) 0 0 no-repeat;
+    height: 32px;
+    background: url(../img/lock-sprite.png) left 0 no-repeat red;
 }
 
 .footer-text {
@@ -450,7 +450,7 @@ height: 40px;
 
 .container-footer span:hover {
     cursor: pointer;
-    background: url(/img/lock-sprite.png) -30px 0 no-repeat;
+    background: url(../img/lock-sprite.png) -30px 0 no-repeat;
 }
 
 .footer:before {
