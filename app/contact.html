@@ -6,13 +6,14 @@
     <meta name="viewport" width="1230" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <link rel="shortcut icon" href="img/icon-title.png" type="image/png">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Услуги по созданию сайтов">
+    <meta name="keywords" content="WEB разработка, WEB development, верстка сайтов">
+    <meta name="author" content="Антон Черкасов">
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <script src="bower/html5shiv/dist/html5shiv.js"></script>
+    <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script> 
 </head>
 <body>
     <div class="wrapper">
@@ -63,7 +64,7 @@
                             <h1 class="title">У вас интересный проект ? Напишите мне</h1> 
                         </div> 
                         <div class="form-block clearfix">
-                            <form action="#" method="POST">
+                            <form action="#" method="POST" class="clearfix">
                                 <label class="name" for="name">Имя
                                 <input type="text" placeholder="Как к Вам обращаться">
                                 </label>
@@ -75,12 +76,11 @@
                                 <textarea name="massage" placeholder="Кратко в чем суть"></textarea>
                                 </label>
                                 <label for="captcha">Введите код, указанный на картинке
-                                <input class="captcha" type="text" name="captcha">
-                                <input class="captcha-text" type="text" placeholder="Введите код" name="required"></label>
-                                <div class="btn-form">
-                                    <button type="submit" class="button btn-1">Отправить</button>
-                                    <button type="submit" class="button btn-2">Очистить </button>
-                                </div>    
+                                <div class="captcha" type="text" name="captcha"></div>
+                                <input class="captcha-code" type="text" placeholder="Введите код" name="required"></label>
+                                <button type="submit" class="button btn-1">Отправить</button>
+                                <button type="reset" class="button btn-2">Очистить</button>
+   
                             </form>
                         </div>             
                     </div>
@@ -91,12 +91,15 @@
     </div>
 <!-- ---------------------- FOOTER --------------------- -->    
     <footer class="footer">
-        <div class="container-footer"> 
-            <span></span>     
-            <p>&copy; 2016. Это мой сайт, пожалуйста, не копируйте и воруйте его</p>
+        <div class="container-footer">    
+            <a href="authorization.html">
+                <p>Войти</p>
+            </a>   
+            <div class="footer-text">&copy; 2016. Это мой сайт, пожалуйста, не копируйте и воруйте его</div>
         </div>
     </footer>
-    <script src="jquery/jquery.js"></script>   
+    <script src="jquery/jquery.js"></script> 
+     
     <script src="js/main.js"></script>
 </body>   
 </html>

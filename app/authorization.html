@@ -6,19 +6,19 @@
     <meta name="viewport" width="1230" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <link rel="shortcut icon" href="/img/icon-title.png" type="image/png">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Услуги по созданию сайтов">
+    <meta name="keywords" content="WEB разработка, WEB development, верстка сайтов">
+    <meta name="author" content="Антон Черкасов">
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="css/authorization.css">
-    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <script src="bower/html5shiv/dist/html5shiv.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <div class="authorization">
             <div class="header-form">
-                <h1>Авторизуйтесь</h1>
+                <span>Авторизируйтесь</span>
             </div>
             <div class="form-block">
                 <form action="#" method="POST">
@@ -26,11 +26,9 @@
                         <input type="text" placeholder="Введите логин">
                     </label>
                     <label class="password" for="password"><span>Пароль</span>
-                        <input type="text" placeholder="Введите пароль">
+                        <input type="password" placeholder="Введите пароль">
                     </label>
-                    <div class="btn-box">
-                        <button type="submit" class="button">Войти</button>
-                    </div>
+                    <button type="submit" class="button">Войти</button>
                 </form>
             </div>
         </div>      
@@ -39,11 +37,12 @@
 <!-- ---------------------- FOOTER --------------------- -->    
     <footer class="footer">
         <div class="container-footer">    
-            <span>Войти</span> 
+            <a href="#">
+                <p>Войти</p>
+            </a>
             
             <div class="footer-text">&copy; 2016. Это мой сайт, пожалуйста, не копируйте и воруйте его</div>
         </div>
-    </footer>
     <script src="jquery/jquery.js"></script> 
     <script src="js/main.js"></script>
 </body>

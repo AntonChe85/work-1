@@ -54,6 +54,7 @@ ul {
 	position: absolute;
 	width: 100%;
 	height: 3px;
+    background:  url(../img/gradient-ie8.png) center center; /*IE8*/
 	background-image: -webkit-linear-gradient(left, rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
 	background-image: -moz-linear-gradient(left, rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
 	background-image: -o-linear-gradient(left,  rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
@@ -68,12 +69,12 @@ ul {
 
 .logo-img {
 	cursor: pointer;
-	padding: 15px 0 35px 0;
+	margin: 10px 0 15px 0;
 	float: left;
 }
 
 .socials {
-    margin-top: 35px;
+    margin-top: 25px;
 	float: right;
 }
 
@@ -98,14 +99,10 @@ ul {
 	border-radius: 50%;  
 }
 
-.social-item-1.active {
-	background-image: url(../img/socials-sprite.png);
-    background-position: 0 47px; 
-}
-
-.social-item-1 {
+.socials .social-item-1 {
+    margin-left: 0;
 	background: url(../img/socials-sprite.png) 0 0;
-} 
+}  
 
 .social-item-1:active {
 	background: url(../img/socials-sprite.png) 0 47px;
@@ -213,25 +210,23 @@ ul {
 	-o-border-radius: 5px;
 	border-radius: 5px;
     color: #fbfcfd; 
-    font-family: 'fira_sansbook', sans-serif;
-    font-size: 16px;
+    font-family: 'fira_sansbook', sans-serif;  
 }
 
 .contacts-title {
     background-color: #3ba8c0;
     line-height: 40px;
     letter-spacing: 1px;
+    margin: 0;
     padding-left: 20px;
     -webkit-border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
 	-ms-border-radius: 5px 5px 0 0;
 	-o-border-radius: 5px 5px 0 0;
-	border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0; 
+    font-weight: normal;
+    font-size: 19px;
 }
-
-.contact-list {
-    margin-top: -18px;
-} 
 
 .contact-list a {
     color: #fbfcfd;
@@ -244,6 +239,7 @@ ul {
 .contact-list li {
     line-height: 40px;
     padding-left: 60px;
+    font-size: 16px;
 }
 
 .contact-list-item-1 {
@@ -276,7 +272,7 @@ ul {
 } 
 
 .header-section {
-    padding: 20px 0 20px 20px;
+    padding: 15px 0 15px 20px;
     -webkit-border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
 	-ms-border-radius: 5px 5px 0 0;
@@ -290,8 +286,7 @@ ul {
 	padding: 0;
 	font-size: 27px; 
 	font-weight: normal; 
-	letter-spacing: -1px;
-    font-family: "firasans-book", sans-serif;
+    font-family: "fira_sansbook", sans-serif;
 }
 
 .line {
@@ -302,7 +297,6 @@ ul {
 
 .projects-site {
     margin: 30px 0 0 20px; 
-    padding-bottom: 40px;
 }
 
 .my-project {
@@ -315,10 +309,10 @@ ul {
 }
 
 .project {
-    position: relative;
-    overflow: hidden;
     width: 183px;
     height: 129px;
+    position: relative;
+    overflow: hidden;  
     background-color: #edf8fc;
     border-radius: 8px;
     border: 2px solid #3ba8c0;
@@ -332,25 +326,28 @@ ul {
 }
 
 .project .opacity {
+    width: 183px;
+    height: 129px;
     position: absolute; 
     top: 0;
     color: #fff;
     background: url(../img/opacity-ie8.png);
     background: rgba(38, 112, 153, .75);
     display: none;
-    padding: 55px 55px 45px 55px;
     border-radius: 5px;
 }
 
 .button {
     text-decoration: none;
     color: #fff;
-    padding: 5px;
+    margin-top: 55px;
+    padding: 0 3px;
     border-radius: 5px;
-    border: 2px solid #fff; 
-    display: block;
-    font-family: "fira-sansbook", sans-serif;
-    font-size: 12px;
+    border: 1px solid #fff; 
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'fira_sansbook', sans-serif;
+    font-size: 10px;
     
 }
 
@@ -358,10 +355,10 @@ ul {
     color: #fff;
     display: block;
     transform: scale(2);
-    -webkit-transition: all ease-out 0.5s;
-     -moz-transition: all ease-out 0.5s;
-     -o-transition: all ease-out 0.5s;
-     transition: all ease-out 0.5s;
+    -webkit-transition: all ease-out 0.25s;
+     -moz-transition: all ease-out 0.25s;
+     -o-transition: all ease-out 0.25s;
+     transition: all ease-out 0.25s;
 }
 
 .project:hover .opacity {
@@ -373,12 +370,12 @@ ul {
     font-family: "firasans-lightitalic", sans-serif;
     font-style: italic;
     display: block;
-    margin-top: 7px;
+    margin: 7px 0;
 }
 
 .description-site {
     color: #a4aaaf;
-    margin-top: 10px;
+    margin: 0;
     font-family: "fira-sanslight", sans-serif;
     font-size: 15px;
 }
@@ -400,24 +397,33 @@ ul {
 .container-footer {
     width: 960px;
     margin: 0 auto;
+    padding-top: 35px;
     height: 78px;
-    line-height: 78px;
     text-align: center;  
     font-family: 'fira_sanslight', sans-serif;
     font-size: 15px;
 }
 
-.container-footer span {
+.container-footer a {
     float: left;
     display: block;
+    color: #687078; 
     width: 20px;
-    height: 78px;
-    background: url(../img/lock-sprite.png) 0 23px no-repeat;
+    height: 32px;
+    background: url(../img/lock-sprite.png) left 0 no-repeat;
 }
 
-.container-footer span:hover {
+.footer-text {
+    margin: 0 200px;
+}
+
+.container-footer a:hover {
     cursor: pointer;
-    background: url(../img/lock-sprite.png) -30px 23px no-repeat;
+    background: url(../img/lock-sprite.png) -30px 0 no-repeat;
+}
+
+.container-footer p {
+    margin: 0 0 0 25px;
 }
 
 .footer:before {
@@ -425,6 +431,8 @@ ul {
 	position: absolute;
 	width: 100%;
 	height: 3px;
+    background:  url(../img/gradient-ie8.png) center center; /*IE8*/
+    background-image: url(../img/gradient-ie8.png);
 	background-image: -webkit-linear-gradient(left, rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
 	background-image: -moz-linear-gradient(left, rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
 	background-image: -o-linear-gradient(left,  rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));

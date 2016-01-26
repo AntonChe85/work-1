@@ -54,11 +54,13 @@ ul {
 	position: absolute;
 	width: 100%;
 	height: 3px;
+    background:  url(../img/gradient-ie8.png) center center; /*IE8*/
 	background-image: -webkit-linear-gradient(left, rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
 	background-image: -moz-linear-gradient(left, rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
 	background-image: -o-linear-gradient(left,  rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
 	background-image: -ms-linear-gradient(left, rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
-	background-image: linear-gradient(to right, rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
+	background-image: linear-gradient(to right, rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95)); */
+    
 }
 
 .container-header {
@@ -68,12 +70,12 @@ ul {
 
 .logo-img {
 	cursor: pointer;
-	padding: 15px 0 35px 0;
+	margin: 10px 0 15px 0;
 	float: left;
 }
 
 .socials {
-    margin-top: 35px;
+    margin-top: 25px;
 	float: right;
 }
 
@@ -98,7 +100,8 @@ ul {
 	border-radius: 50%;  
 }
 
-.social-item-1 {
+.socials .social-item-1 {
+    margin-left: 0;
 	background: url(../img/socials-sprite.png) 0 0;
 } 
 
@@ -208,25 +211,23 @@ ul {
 	-o-border-radius: 5px;
 	border-radius: 5px;
     color: #fbfcfd; 
-    font-family: 'fira_sansbook', sans-serif;
-    font-size: 16px;
+    font-family: 'fira_sansbook', sans-serif;  
 }
 
 .contacts-title {
     background-color: #3ba8c0;
     line-height: 40px;
     letter-spacing: 1px;
+    margin: 0;
     padding-left: 20px;
     -webkit-border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
 	-ms-border-radius: 5px 5px 0 0;
 	-o-border-radius: 5px 5px 0 0;
-	border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0; 
+    font-weight: normal;
+    font-size: 19px;
 }
-/* ********** проверить этот отступ ************** */
-.contact-list {
-    margin-top: -18px;
-} 
 
 .contact-list a {
     color: #fbfcfd;
@@ -239,6 +240,7 @@ ul {
 .contact-list li {
     line-height: 40px;
     padding-left: 60px;
+    font-size: 16px;
 }
 
 .contact-list-item-1 {
@@ -271,8 +273,8 @@ ul {
 } 
 
 .section-content-1 {
-    margin-bottom: 25px; 
-    padding-bottom: 40px; 
+    margin-bottom: 25px;
+    padding-bottom: 35px;
 }
 
 .header-section {
@@ -293,8 +295,8 @@ ul {
 }
 
 .foto {
-    width: 140px;
-    height: 140px;
+    width: 146px;
+    height: 146px;
     margin: 30px 0 0 50px;
     border: 3px solid #2da4bc;
     -webkit-border-radius: 50%;
@@ -331,8 +333,7 @@ ul {
 }
 
 .anketa-item-2 span {
-    text-transform: uppercase;
-    
+    text-transform: uppercase;  
 }
 
 .skills ul {
@@ -374,13 +375,16 @@ ul {
     color: #687078;
     font-family: 'fira_sansbook', sans-serif;
     font-size: 18px;
+    line-height: 0.9;
+    display: block;
 }
 
 .list-items p {
-    margin: -4px 0;
     color: #687078;
     font-family: 'fira_sanslight', sans-serif;
     font-size: 16px;
+    padding-top: 4px;
+    margin: 0;
 }
 
 .list-items li { 
@@ -388,7 +392,9 @@ ul {
     padding-left: 66px;
 }
 
-
+.list-items .list-item-3 {
+    margin-bottom: 0;  
+}
 
 .work li {
     background: url(../img/icon-work.png) no-repeat left center; 
@@ -396,7 +402,7 @@ ul {
 
 .section-content-2 {
     margin-bottom: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 40px;
 }
 
 .learn .list-item-1,
@@ -404,12 +410,12 @@ ul {
     background: url(../img/icon-learn.png) no-repeat left center; 
 }
 
-.learn .list-item-3 {
+.learn .list-item-3 { 
     background: url(../img/icon-kurs.png) no-repeat 10px center; 
 }
 
 .section-content-3 {
-    padding-bottom: 25px;
+    padding-bottom: 40px;
 }
 
 .empty {
@@ -429,7 +435,7 @@ ul {
 .container-footer {
     width: 960px;
     margin: 0 auto;
-    padding-top: 25px;
+    padding-top: 35px;
     height: 78px;
     text-align: center;  
     font-family: 'fira_sanslight', sans-serif;
@@ -439,18 +445,23 @@ ul {
 .container-footer a {
     float: left;
     display: block;
+    color: #687078; 
     width: 20px;
     height: 32px;
-    background: url(../img/lock-sprite.png) left 0 no-repeat red;
+    background: url(../img/lock-sprite.png) left 0 no-repeat;
 }
 
 .footer-text {
     margin: 0 200px;
 }
 
-.container-footer span:hover {
+.container-footer a:hover {
     cursor: pointer;
     background: url(../img/lock-sprite.png) -30px 0 no-repeat;
+}
+
+.container-footer p {
+    margin: 0 0 0 25px;
 }
 
 .footer:before {
@@ -458,6 +469,8 @@ ul {
 	position: absolute;
 	width: 100%;
 	height: 3px;
+    background:  url(../img/gradient-ie8.png) center center; /*IE8*/
+    background-image: url(../img/gradient-ie8.png);
 	background-image: -webkit-linear-gradient(left, rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
 	background-image: -moz-linear-gradient(left, rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
 	background-image: -o-linear-gradient(left,  rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
