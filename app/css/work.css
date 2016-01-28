@@ -14,6 +14,7 @@ html {
 }
  
 a {
+    display: block;
     text-decoration: none;   
 }
 
@@ -99,48 +100,45 @@ ul {
 	border-radius: 50%;  
 }
 
-.socials .social-item-1 {
+.social-vk {
     margin-left: 0;
 	background: url(../img/socials-sprite.png) 0 0;
-}  
+} 
 
-.social-item-1:active {
+.social-vk:active {
 	background: url(../img/socials-sprite.png) 0 47px;
 } 
 
-.social-item-2 {
+.social-tw {
 	background: url(../img/socials-sprite.png) -57px 0;
 } 
 
-.social-item-2:active {
+.social-tw:active {
 	background: url(../img/socials-sprite.png) -57px 47px;
 }
 
-.social-item-3 {
+.social-fb {
 	background: url(../img/socials-sprite.png) -114px 0;
 } 
 
-.social-item-3:active {
+.social-fb:active {
 	background: url(../img/socials-sprite.png) -114px 47px;
 }
 
-.social-item-4 {
+.social-gh {
 	background: url(../img/socials-sprite.png) -171px 0;
 } 
 
-.social-item-4:active {
+.social-gh:active {
 	background: url(../img/socials-sprite.png) -171px 47px;
 }
 
-.rotate-social {
-    -o-transition: transform 0.25s;
-	-ms-transition: transform 0.25s;
-	-moz-transition: transform 0.25s;
-	-webkit-transition: transform 0.25s;
-	transition: transform 0.25s;
-}
-
 .rotate-social:hover {
+    -o-transition: transform 0.25s;
+    -ms-transition: transform 0.25s;
+    -moz-transition: transform 0.25s;
+    -webkit-transition: transform 0.25s;
+    transition: transform 0.25s;
     -o-transform: rotate(1turn);
 	-ms-transform: rotate(1turn);
 	-moz-transform: rotate(1turn);
@@ -242,15 +240,15 @@ ul {
     font-size: 16px;
 }
 
-.contact-list-item-1 {
+.contact-email {
     background: url(../img/icon-email.png) no-repeat 20px center #41b9d4;
 }
 
-.contact-list-item-2 {
+.contact-phone {
     background: url(../img/icon-phone.png) no-repeat 20px center #48cbe8;
 }
 
-.contact-list-item-3 {
+.contact-skype {
     background: url(../img/icon-skype.png) no-repeat 20px center #51daf8;
 }
  
@@ -322,7 +320,6 @@ ul {
 .project-add-new {
     background: url(../img/_icon-project-add-new.png) no-repeat 50% 50%;
     border: 2px dashed #3ba8c0;
-    cursor: pointer;
 }
 
 .project .opacity {
