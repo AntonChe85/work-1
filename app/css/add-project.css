@@ -14,6 +14,18 @@ html {
     margin: 0;
 }
 
+.backgroun-opacity {
+    background: #818e9b;
+    opacity: 0.75;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+
 .add-project {
     width: 360px;
     margin: 100px auto;
