@@ -300,6 +300,7 @@ label {
     margin-top: 20px;
     font-family: 'fira_sanslight', sans-serif;
     font-size: 19px;
+    position: relative;
 }
 
 input {
@@ -434,6 +435,69 @@ textarea {
 .btn-2:active {
     background: #849db5;
     box-shadow: inset 0 3px #687b8f; 
+}
+
+.tultip {
+    display: none;
+    color: #fff;
+    background-color: #f97e76;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0 5px;
+    /* position: relative; */
+    /* z-index: 3; */
+}
+
+.tultip-name {
+    position: absolute;
+    top: 40px;
+    left: -168px;   
+}
+
+.tultip-email {
+    position: absolute; 
+    top: 40px;
+    right: -182px;
+}
+
+.tultip-text {
+    position: absolute;
+    top: 40px;
+    left: -230px;   
+}
+
+.tultip-code {
+    position: absolute;
+    top: 55px;
+    right: -166px;   
+}
+
+.tultip-name:after,
+.tultip-text:after {
+    content: ''; 
+    position: absolute;
+    top: 5px;
+    right: -20px; 
+    border: 10px solid transparent;
+    border-left: 15px solid #f97e76;
+}
+
+.tultip-email:before,
+.tultip-code:before {
+    content: ''; 
+    position: absolute;
+    top: 5px;
+    left: -20px; 
+    border: 10px solid transparent;
+    border-right: 15px solid #f97e76;
+}
+
+.error{
+	background-color: #f2cccd;
+	border: 1px solid #f97e76;;
 }
 
 .empty {

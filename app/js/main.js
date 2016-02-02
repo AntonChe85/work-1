@@ -1,4 +1,5 @@
-var app = (function() {
+
+    var app = (function() {
     var init = function() {
         setUpListeners();
     };
@@ -9,27 +10,35 @@ var app = (function() {
     var showElems = function() {
         $('.background-opacity').toggle();
         $('.add-project').toggle();
-    };
-    var checkForm = function(e) {
-        e.preventDefault();
         
+        $('form').on('submit', checkForm);
+    };
+    
+    var checkForm = function(e){
+        e.preventDefault();
+
         var form = $(this);
-        var items = form.find('input, textarea').not('.download, .btn-popup');
-        $.each(items, function(index, val) {
-            var content = $(val).val();
-            if(content.length === 0) {
+        var items = form.find('input, textarea').not('input[type="submit"], input[type="reset"]');
+
+        $.each(items, function(index, val){
+            var content = $(val).val().trim();
+            console.log(content);
+            if(content.length === 0){
                 $(this).addClass("error");
-            }
-            else {
+            } else {
                 $(this).removeClass("error");
             }
+            
         });
+
     };
-    return {
+
+    return{
         init:init
     }
 }());
-           
-$(document).ready(function() {
+
+$(document).ready(function(){
     app.init();
-});          
+});       
+    

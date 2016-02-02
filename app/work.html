@@ -125,27 +125,32 @@
                     <a href="#" class="close-popup"></a>
                 </div>
                 <div class="form-block">
-                    <form action="#" method="POST">
-                        <div class="alert alert-error">
+                    <form action="#">
+                        <!-- <div class="alert alert-error">
                             <p>Ошибка!</p>
                             <span>Не возможно добавить проект.</span>
-                        </div>
+                        </div> -->
                         <label><span>Название проекта</span>
-                            <input class="inp-erorr" type="text" placeholder="Введите название">
+                            <input type="text" placeholder="Введите название">
+                            <div class="tultip tultip-name">введите название</div>
                         </label>
                         <label class="label-btn"><span>Картинка проекта</span>
-                            <input class="inp-erorr" type="text" placeholder="Загрузите изображение">
+                            <input type="text" placeholder="Загрузите изображение">
+                            <div class="tultip tultip-img">изображение</div>
                         </label>
                         <label class="lbl-down">
                             <span class="download">
                                 <input class="type-file" type="file">
+                                
                             </span>
                         </label>
                         <label><span>URL проекта</span>
-                            <input class="inp-erorr" type="text" placeholder="Добавте ссылку">
+                            <input type="text" placeholder="Добавте ссылку">
+                            <div class="tultip tultip-link">ссылка на проект</div>
                         </label>
                         <label><span>Описание</span>
-                        <textarea class="inp-erorr" name="info" placeholder="Пара слов о Вашем проекте"></textarea>
+                        <textarea name="info" placeholder="Пара слов о Вашем проекте"></textarea>
+                        <div class="tultip tultip-text">описание проекта</div>
                         </label>
                         <div class="div-btn">
                             <button type="submit" class="button btn-popup"><span>Добавить</span></button>    
@@ -153,18 +158,18 @@
                     </form>
                 </div>
                 <div class="added-alert">
-                    <div class="alert">
+                    <!-- <div class="alert">
                         <p>Ура!</p>
                         <span>Проект успешно добавлен.</span>
-                    </div>
+                    </div> -->
                 </div> 
             </div> 
-            <div class="block-errors">
-                <div class="pointer-error"><p align="right">введите название</p></div>
-                <div class="pointer-error"><p align="right">изображение</p></div>
-                <div class="pointer-error"><p align="right">ссылка на проект</p></div>
-                <div class="pointer-error"><p align="right">описание проекта</p></div>
-            </div>  
+  
+                
+                
+                
+                
+     
                  
             <div class="empty"></div>
         </div>            

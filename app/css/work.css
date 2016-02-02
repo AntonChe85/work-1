@@ -465,7 +465,7 @@ ul {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 50%;
     margin-left: -180px;
@@ -538,10 +538,6 @@ input {
     font-family: 'fira_sanslight', sans-serif;
 }
 
-/* .lbl-down {
-    position: relative;
-} */
-
 .download {
     width: 50px;
     height: 40px;
@@ -562,12 +558,6 @@ input {
 
 .type-file {
     display: none;
-}
-
-.inp-erorr {
-    border: 1px solid #f97e76;
-    background-color: #a7878d;
-    color: #8eb4c3;
 }
 
 textarea {
@@ -654,6 +644,7 @@ textarea {
 }
 
 .alert {
+    display: none;
     background-color: #b8e1ce;
     border: 1px solid #49bb7b;
     color: #53be81;
@@ -667,8 +658,16 @@ textarea {
     position: relative;
 }
 
+
+.inp-erorr {
+    display: none;
+    border: 1px solid #f97e76 !important;
+    background-color: #a7878d !important;
+    color: #8eb4c3 !important;;
+}
+
 .alert-error {
-    /* display: none; */ 
+    display: none; 
     background-color: #f2cccd;
     color: #f97e76; 
     border: 1px solid #f97e76; 
@@ -693,15 +692,10 @@ textarea {
     right: 3px;
 }
 
-.block-errors {
-    position: absolute;
-    top: 190px;
-    left: 305px;
-    
-}
 
-.pointer-error {
-    display: none;
+
+.tultip {
+    /* display: none; */
     color: #fff;
     background-color: #f97e76;
     -webkit-border-radius: 3px;
@@ -709,22 +703,46 @@ textarea {
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     border-radius: 3px;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px;
     position: relative;
-    margin: 45px;
     z-index: 3;
 }
 
-.pointer-error p {
-    margin: 0;
+.tultip-name {
+    position: absolute;
+    top: 32px;
+    left: -163px;   
 }
 
-.pointer-error:after {
+.tultip-img {
+    position: absolute;
+    top: 32px;
+    left: -128px;   
+}
+
+.tultip-link {
+    position: absolute;
+    top: 32px;
+    left: -159px;   
+}
+
+.tultip-text {
+    position: absolute;
+    top: 38px;
+    left: -163px;   
+}
+
+.tultip:after {
     content: ''; 
     position: absolute;
     right: -20px; top: 5px;
     border: 10px solid transparent;
     border-left: 15px solid #f97e76;
+}
+
+.error{
+	background-color: #f2cccd;
+	border: 1px solid #f97e76;;
 }
 
 
