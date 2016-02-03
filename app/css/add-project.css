@@ -14,7 +14,7 @@ html {
     margin: 0;
 }
 
-.backgroun-opacity {
+.popap {
     background: #818e9b;
     opacity: 0.75;
     width: 100%;
@@ -177,7 +177,7 @@ textarea {
     border: transparent;
     box-shadow: inset 0 -3px #3ba8c0;
     color: #fff;
-    margin: 35px 0 0 90px;
+    /* margin: 35px 0 0 90px; */
     padding: 2px 30px;
     font-family: 'fira_sansbook', sans-serif; 
     font-size: 19px;

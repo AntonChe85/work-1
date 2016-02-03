@@ -5,10 +5,10 @@
     };
     var setUpListeners = function() {
         $('.add-btn').on('click', showElems); 
-        $('.background-opacity').on('click', showElems);   
+        $('.popup-field').on('click', showElems);   
     };  
     var showElems = function() {
-        $('.background-opacity').toggle();
+        $('.popup-field').toggle();
         $('.add-project').toggle();
         
         $('form').on('submit', checkForm);
