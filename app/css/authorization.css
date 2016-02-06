@@ -38,7 +38,8 @@ ul {
     min-height: 100%;
     overflow: hidden;
     position: relative;
-}
+} 
+
 /* ******************* CONTENT ****************** */
 
 .auth {
@@ -52,7 +53,7 @@ ul {
     -o-border-radius: 5px;
     border-radius: 5px;
     position: fixed;
-    top: 50px;
+    bottom: 150px;
     left: 50%;
     margin-left: -295px;
 }

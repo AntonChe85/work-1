@@ -463,7 +463,7 @@ ul {
 }
 
 .add-project {
-    display: none;
+    display: none; 
     width: 360px;
     padding-bottom: 25px;
     background-color: #eff3f7;
@@ -657,7 +657,7 @@ textarea {
 }
 
 .alert {
-    display: none;
+    /* display: none; */
     background-color: #b8e1ce;
     border: 1px solid #49bb7b;
     color: #53be81;
@@ -672,19 +672,27 @@ textarea {
 }
 
 
-.inp-erorr {
+/* .inp-erorr {
     display: none;
     border: 1px solid #f97e76 !important;
     background-color: #a7878d !important;
     color: #8eb4c3 !important;;
-}
+} */
 
 .alert-error {
-    display: none; 
+    /* display: none; */ 
     background-color: #f2cccd;
     color: #f97e76; 
-    border: 1px solid #f97e76; 
-    margin-top: 15px;
+    border: 1px solid #f97e76;
+     padding: 5px 0 10px 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    font-family: 'fira_sansbook', sans-serif;
+    position: relative;
+    /* margin-top: 15px; */
 }
 
 .alert p {
@@ -705,10 +713,7 @@ textarea {
     right: 3px;
 }
 
-
-
-.tultip {
-    /* display: none; */
+.tooltip {
     color: #fff;
     background-color: #f97e76;
     -webkit-border-radius: 3px;
@@ -716,36 +721,40 @@ textarea {
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     border-radius: 3px;
-    padding: 5px 10px;
-    position: relative;
+    padding: 5px 10px; 
     z-index: 3;
+    position: absolute;
+    top: 32px; 
+    right: 330px; 
+    text-align: right;
+    white-space: nowrap;
 }
 
-.tultip-name {
+/* .tooltip-name {
     position: absolute;
     top: 32px;
     left: -163px;   
-}
+} */
 
-.tultip-img {
+/* .tooltip-img {
     position: absolute;
     top: 32px;
     left: -128px;   
-}
+} */
 
-.tultip-link {
+/* .tooltip-link {
     position: absolute;
     top: 32px;
     left: -159px;   
-}
+} */
 
-.tultip-text {
+/* .tooltip-text {
     position: absolute;
     top: 38px;
     left: -163px;   
-}
+} */
 
-.tultip:after {
+.tooltip:after {
     content: ''; 
     position: absolute;
     right: -20px; top: 5px;

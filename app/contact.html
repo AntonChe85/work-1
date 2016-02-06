@@ -63,23 +63,19 @@
                             <h1 class="title">У вас интересный проект ? Напишите мне</h1> 
                         </div> 
                         <div class="form-block clearfix">
-                            <form action="#" method="POST" class="clearfix">
+                            <form action="#" class="clearfix">
                                 <label class="lbl-name" for="name">Имя
-                                    <input type="text" placeholder="Как к Вам обращаться">
-                                    <div class="tultip tultip-name">Вы не ввели имя</div>
+                                    <input type="text" placeholder="Как к Вам обращаться" data-info="Вы не ввели имя"/>
                                 </label>
                                 <label class="lbl-email" for="email">Email
-                                    <input type="text" placeholder="Куда мне писать">
-                                    <div class="tultip tultip-email">Вы не ввели email</div>
+                                    <input type="text" placeholder="Куда мне писать" data-info="Вы не ввели email"/>
                                 </label>
                                 <label>Сообщение
-                                    <textarea name="massage" placeholder="Кратко в чем суть"></textarea>
-                                    <div class="tultip tultip-text">Что вы от меня хотите ?</div>
+                                    <textarea name="massage" placeholder="Кратко в чем суть" data-info="Что вы от меня хотите ?"></textarea>
                                 </label>
                                 <label for="captcha">Введите код, указанный на картинке
                                     <div class="captcha" type="text" name="captcha"></div>
-                                    <input class="captcha-code" type="text" placeholder="Введите код" name="required">
-                                    <div class="tultip tultip-code">Вы не ввели код</div>
+                                    <input class="captcha-code" type="text" placeholder="Введите код" data-info="Вы не ввели код"/>
                                 </label>
                                 <button type="submit" class="button btn-send">Отправить</button>
                                 <button type="reset" class="button btn-clear">Очистить</button>   
