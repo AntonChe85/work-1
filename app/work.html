@@ -106,8 +106,10 @@
                                     <p class="description-site">Информация о проекте 4 превью 2 строки....</p>
                                 </div> 
                                 <div class="my-project project-list-5">
-                                    <a class="add-btn" href="#">
-                                        <div class="project project-add-new">   
+                                    <a id="add-btn" href="#">
+                                        <div class="project project-add-new"> 
+                                            <div class="opacity">
+                                            </div>
                                         </div> 
                                     </a>
                                     <p class="description-site hidden-text">Информация о проекте 5 превью 2 строки....</p>
@@ -117,19 +119,16 @@
                     </div>
                 </div>
             </main>  
-    <!-- ---------------------- POP UP --------------------- -->            
-            <div class="popup-field"></div>  
-            <div class="add-project">
+    <!-- ---------------------- POP UP --------------------- -->             
+            <div id="add-project-popup">
                 <div class="header-form">
                     <span>Добавление проекта</span>
-                    <a href="#" class="close-popup"></a>
+                    <a href="#" class="close-popup b-close"></a>
                 </div>
                 <div class="form-block">
-                    <form action="#">
-                        <!-- <div class="alert-error">
-                            <p>Ошибка!</p>
-                            <span>Не возможно добавить проект.</span>
-                        </div>  -->
+                    <form id="add-new-project" action="post.php">
+                        <div class="server-mes error-mes"></div>
+                        <div class="server-mes success-mes"></div>
                         <label><span>Название проекта</span>
                             <input type="text" placeholder="Введите название" data-info="введите название"/>
                         </label>
@@ -138,9 +137,7 @@
                         </label>
                         <label class="lbl-down">
                             <span class="download">
-                                <input class="type-file" type="file"/>
-                                
-                            </span>
+                                <input class="type-file" type="file"/>                                   </span>
                         </label>
                         <label><span>URL проекта</span>
                             <input type="text" placeholder="Добавте ссылку" data-info="ссылка на проект"/>
@@ -152,12 +149,6 @@
                             <button type="submit" class="btn-popup"><span>Добавить</span></button>    
                         </div>
                     </form>
-                </div>
-                <div class="added-alert">
-                    <!-- <div class="alert">
-                        <p>Ура!</p>
-                        <span>Проект успешно добавлен.</span>
-                    </div> -->
                 </div> 
             </div>     
             <div class="empty"></div>
@@ -173,7 +164,8 @@
                 <div class="footer-text">&copy; 2016. Это мой сайт, пожалуйста, не копируйте и воруйте его</div>
             </div>
         </footer>
-        <script src="bower/jquery/jquery.js"></script>  
-        <script src="js/main.js"></script>
+        <script src="bower/jquery/jquery.js"></script> 
+        <script src="bower/bPopup/jquery.bpopup.js"></script>
+        <script src="js/valid.js"></script> 
     </body>   
 </html>

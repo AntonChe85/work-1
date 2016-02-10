@@ -404,7 +404,6 @@ textarea {
     padding: 4px 20px; 
     font-family: 'fira_sansbook', sans-serif;
     font-size: 19px;
-    /* margin-top: 20px; */
     cursor: pointer;
 }
 
@@ -457,10 +456,7 @@ textarea {
     position: absolute;
     top: 40px;
     left: -168px; 
-    
-
     z-index: 3;
- 
     text-align: right;
     white-space: nowrap;
 }
