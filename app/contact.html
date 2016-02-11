@@ -10,6 +10,7 @@
     <meta name="keywords" content="WEB разработка, WEB development, верстка сайтов">
     <meta name="author" content="Антон Черкасов">
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/fonts.css">
     <script src="bower/html5shiv/dist/html5shiv.js"></script>
@@ -63,19 +64,21 @@
                             <h1 class="title">У вас интересный проект? Напишите мне</h1> 
                         </div> 
                         <div class="form-block clearfix">
-                            <form action="post.php" class="clearfix">
+                            <form id="contact-me" action="post.php" class="clearfix">
+                                <div class="server-mes error-mes"></div>
+                        <div class="server-mes success-mes"></div>
                                 <label class="lbl-name" for="name">Имя
-                                    <input type="text" placeholder="Как к Вам обращаться" data-info="Вы не ввели имя"/>
+                                    <input type="text" placeholder="Как к Вам обращаться" qtip-content="Вы не ввели имя"/>
                                 </label>
                                 <label class="lbl-email" for="email">Email
-                                    <input type="text" placeholder="Куда мне писать" data-info="Вы не ввели email"/>
+                                    <input type="text" placeholder="Куда мне писать" qtip-position="right" qtip-content="Вы не ввели email"/>
                                 </label>
                                 <label>Сообщение
-                                    <textarea name="massage" placeholder="Кратко в чем суть" data-info="Что вы от меня хотите ?"></textarea>
+                                    <textarea name="massage" placeholder="Кратко в чем суть" qtip-content="Что вы от меня хотите ?"></textarea>
                                 </label>
                                 <label for="captcha">Введите код, указанный на картинке
                                     <div class="captcha" type="text" name="captcha"></div>
-                                    <input class="captcha-code" type="text" placeholder="Введите код" data-info="Вы не ввели код"/>
+                                    <input class="captcha-code" type="text" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код"/>
                                 </label>
                                 <button type="submit" class="button btn-send">Отправить</button>
                                 <button type="reset" class="button btn-clear">Очистить</button>   
@@ -97,7 +100,11 @@
             <div class="footer-text">&copy; 2016. Это мой сайт, пожалуйста, не копируйте и воруйте его</div>
         </div>
     </footer>
-    <script src="bower/jquery/jquery.js"></script>    
-    <script src="js/valid.js"></script> 
+    <script src="bower/jquery/jquery.js"></script>
+    <script src="bower/qtip2/jquery.qtip.js"></script>
+    <script src="js/valid.js"></script>       
+    <script src="js/contact.js"></script>
+    <script src="js/main.js"></script> 
+     
 </body>   
 </html>

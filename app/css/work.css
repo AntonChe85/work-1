@@ -658,34 +658,21 @@ textarea {
     position: relative;
 } 
 
-.tooltip {
-    color: #fff;
+
+.qtip-mystyle {
     background-color: #f97e76;
+    border: 1px solid #f97e76;
+    color: #fff;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     border-radius: 3px;
-    padding: 5px 10px; 
-    z-index: 3;
-    position: absolute;
-    top: 32px; 
-    right: 330px; 
-    text-align: right;
-    white-space: nowrap;
-}
-
-.tooltip:after {
-    content: ''; 
-    position: absolute;
-    right: -20px; top: 5px;
-    border: 10px solid transparent;
-    border-left: 15px solid #f97e76;
 }
 
 .error{
 	background-color: #f2cccd;
-	border: 1px solid #f97e76;;
+	border: 1px solid #f97e76;
 }
 
 

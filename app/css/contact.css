@@ -1,4 +1,6 @@
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -444,65 +446,15 @@ textarea {
     box-shadow: inset 0 3px #687b8f; 
 }
 
-.tooltip {
-    color: #fff;
+.qtip-mystyle {
     background-color: #f97e76;
+    border: 1px solid #f97e76;
+    color: #fff;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     border-radius: 3px;
-    padding: 0 5px;
-    position: absolute;
-    top: 40px;
-    left: -168px; 
-    z-index: 3;
-    text-align: right;
-    white-space: nowrap;
-}
-
-.tooltip-name {
-    position: absolute;
-    top: 40px;
-    left: -168px;   
-}
-
-.tooltip-email {
-    position: absolute; 
-    top: 40px;
-    right: -182px;
-}
-
-.tooltip-text {
-    position: absolute;
-    top: 40px;
-    left: -230px;   
-}
-
-.tooltip-code {
-    position: absolute;
-    top: 55px;
-    right: -166px;   
-}
-
-.tooltip-name:after,
-.tooltip-text:after {
-    content: ''; 
-    position: absolute;
-    top: 5px;
-    right: -20px; 
-    border: 10px solid transparent;
-    border-left: 15px solid #f97e76;
-}
-
-.tooltip-email:before,
-.tooltip-code:before {
-    content: ''; 
-    position: absolute;
-    top: 5px;
-    left: -20px; 
-    border: 10px solid transparent;
-    border-right: 15px solid #f97e76;
 }
 
 .error{

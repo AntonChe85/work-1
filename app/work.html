@@ -10,6 +10,7 @@
         <meta name="keywords" content="WEB разработка, WEB development, верстка сайтов">
         <meta name="author" content="Антон Черкасов">
         <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+        <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
         <link rel="stylesheet" href="css/work.css">
         <link rel="stylesheet" href="css/fonts.css">
         <script src="bower/html5shiv/dist/html5shiv.js"></script>
@@ -130,20 +131,20 @@
                         <div class="server-mes error-mes"></div>
                         <div class="server-mes success-mes"></div>
                         <label><span>Название проекта</span>
-                            <input type="text" placeholder="Введите название" data-info="введите название"/>
+                            <input type="text" placeholder="Введите название" qtip-content="введите название"/>
                         </label>
                         <label class="label-btn"><span>Картинка проекта</span>
-                            <input type="text" placeholder="Загрузите изображение" data-info="изображение"/>
+                            <input type="text" placeholder="Загрузите изображение" qtip-content="изображение"/>
                         </label>
                         <label class="lbl-down">
                             <span class="download">
                                 <input class="type-file" type="file"/>                                   </span>
                         </label>
                         <label><span>URL проекта</span>
-                            <input type="text" placeholder="Добавте ссылку" data-info="ссылка на проект"/>
+                            <input type="text" placeholder="Добавте ссылку" qtip-content="ссылка на проект"/>
                         </label>
                         <label><span>Описание</span>
-                        <textarea name="info" placeholder="Пара слов о Вашем проекте" data-info="описание проекта"></textarea>
+                        <textarea name="info" placeholder="Пара слов о Вашем проекте" qtip-content="описание проекта"></textarea>
                         </label>
                         <div class="btn-center">
                             <button type="submit" class="btn-popup"><span>Добавить</span></button>    
@@ -166,6 +167,9 @@
         </footer>
         <script src="bower/jquery/jquery.js"></script> 
         <script src="bower/bPopup/jquery.bpopup.js"></script>
-        <script src="js/valid.js"></script> 
+        <script src="bower/qtip2/jquery.qtip.js"></script>
+        <script src="js/valid.js"></script>
+        <script src="js/main.js"></script>
+         
     </body>   
 </html>
