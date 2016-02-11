@@ -104,8 +104,11 @@ ul {
 	border-radius: 50%;  
 }
 
-.social-vk {
+.social-vk:first-child {
     margin-left: 0;
+}
+
+.social-vk {
 	background: url(../img/socials-sprite.png) 0 0;
 } 
 

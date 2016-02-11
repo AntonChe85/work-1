@@ -105,10 +105,13 @@ ul {
 	border-radius: 50%;  
 }
 
-.social-vk {
+.social-vk:first-child {
     margin-left: 0;
+}
+
+.social-vk {
 	background: url(../img/socials-sprite.png) 0 0;
-} 
+}  
 
 .social-vk:active {
 	background: url(../img/socials-sprite.png) 0 47px;
@@ -327,7 +330,7 @@ ul {
 }
 
 .project-add-new {
-    background: url(../img/_icon-project-add-new.png) no-repeat 50% 50%;
+    background: url(../img/_icon-project-add-new.png) no-repeat 50% 50% #edf8fc;
     border: 2px dashed #3ba8c0;
 }
 
@@ -338,7 +341,7 @@ ul {
     top: 0;
     color: #fff;
     background: url(../img/opacity-ie8.png);
-    background: rgba(38, 112, 153, .75);
+    background: rgba(38, 112, 153, .55);
     display: none;
     border-radius: 5px;
 }
@@ -658,16 +661,20 @@ textarea {
     position: relative;
 } 
 
-
 .qtip-mystyle {
     background-color: #f97e76;
     border: 1px solid #f97e76;
-    color: #fff;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     border-radius: 3px;
+    color: #fff;
+}
+
+.qtip-content {
+    padding: 3px 5px;
+    white-space: nowrap;
 }
 
 .error{

@@ -7,7 +7,7 @@ var validation = (function () {
     
     // прослушивает события
     var _setUplistners = function () {
-        $('form').on('keydown', 'error', _removeError);
+        $('form').on('keydown', '.error', _removeError);
         $('form').on('reset', _clearForm);
     };
     
@@ -51,7 +51,7 @@ var validation = (function () {
                 event: 'show'
             },
             hide: {
-                event: 'keydown hideTooltip'
+                event: 'keydown hideTooltip removeTooltip'
             },
             position: position,
             style: {
